@@ -1,0 +1,8 @@
+<div class="child">
+  <h2>Child Component</h2>
+  <p>Todays food: <strong> {{menu}}</strong></p>
+  <label for="food-input">Add Food: </label>
+  <input type="text" id="food-input" #newFood>
+  <button (click)="addNewFood(newFood.value)">Add</button>
+
+</div>
