@@ -1,0 +1,9 @@
+<div class="parent">
+  <h1>Parent Component</h1>
+  <ul>
+    <li *ngFor="let food of foods">
+      {{food}}
+    </li>
+  </ul>
+  <app-food  [menu] = "parentFood" (newFoodEvent)="addBevrage($event)"></app-food>
+</div>
